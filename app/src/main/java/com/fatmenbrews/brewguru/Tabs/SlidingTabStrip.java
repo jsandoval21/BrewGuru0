@@ -1,4 +1,4 @@
-package com.fatmenbrews.brewguru.tabs;
+package com.fatmenbrews.brewguru.Tabs;
 /*
  * Copyright 2014 Google Inc. All rights reserved.
  *
