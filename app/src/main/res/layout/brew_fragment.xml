@@ -6,12 +6,80 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/brew_text"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text=" The page number is 1"
-        android:textColor="@color/colorPrimary"
-        android:gravity="center"
-        android:textSize="20sp"/>
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/brew_name_text"
+        />
+
+    <EditText
+        android:id="@+id/brew_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/brew_name_hint"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/brew_style_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/brew_method_text"/>
+
+        <Spinner
+            android:id="@+id/brew_style_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:spinnerMode="dialog">
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/brew_method_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:spinnerMode="dialog">
+        </Spinner>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/batch_size_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/boil_size_text"/>
+
+        <EditText
+            android:id="@+id/batch_size"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/boil_size"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            />
+
+    </GridLayout>
 
 </LinearLayout>

@@ -7,23 +7,21 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 /**
- * Created by Juan on 11/5/2018.
+ * Created by Juan on 11/13/2018.
  */
 
-public class BrewFragment extends Fragment {
-
+public class HopsFragment extends Fragment {
     private static final String TAB_POSITION = "position";
 
-    public static BrewFragment getInstance(int position) {
-        BrewFragment brewFragment = new BrewFragment();
+    public static HopsFragment getInstance(int position) {
+        HopsFragment hopsFragment = new HopsFragment();
         Bundle args = new Bundle();
         args.putInt(TAB_POSITION, position);              //replace with a key
-        brewFragment.setArguments(args);
+        hopsFragment.setArguments(args);
 
-        return brewFragment;
+        return hopsFragment;
     }
 
     @Override
@@ -33,7 +31,7 @@ public class BrewFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.d("Brew fragment", "in Brew fragment");
-        return inflater.inflate(R.layout.brew_fragment, container, false);
+        Log.d("hops fragment", "in hops fragment");
+        return inflater.inflate(R.layout.hops_fragment, container, false);
     }
 }

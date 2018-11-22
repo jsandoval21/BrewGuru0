@@ -5,7 +5,33 @@
         <item>Fermentables</item>
         <item>Hops</item>
         <item>Mash</item>
-        <item>Water Chemistry</item>
         <item>Yeast</item>
+        <item>Water Chemistry</item>
     </string-array>
+
+    <!-- Brew Fragment Strings -->
+    <string name="brew_name_text">Brew Name</string>
+    <string name="brew_name_hint">Enter Brew Name</string>
+    <string name="brew_style_text">Brew Style</string>
+    <string-array name="brew_style_dropdown">
+        <item>IPA</item>
+        <item>Pilsner</item>
+        <item>Lager</item>
+        <item>Porter</item>
+        <item>Stout</item>
+        <item>Hefeweizen</item>
+    </string-array>
+
+    <string name="brew_method_text">Brew Method</string>
+    <string-array name="brew_method_dropdown">
+        <item>All Grain</item>
+        <item>Partial Mash</item>
+        <item>Extract</item>
+        <item>BIAB</item>
+    </string-array>
+
+    <string name="batch_size_text">Batch Size</string>
+    <string name="boil_size_text">Boil Size</string>
+
+
 </resources>
