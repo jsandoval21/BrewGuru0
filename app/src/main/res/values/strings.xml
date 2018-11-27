@@ -33,5 +33,22 @@
     <string name="batch_size_text">Batch Size</string>
     <string name="boil_size_text">Boil Size</string>
 
+    <!-- Fermentable Fragment -->
+    <!-- units -->
+    <string name="amount_hint">Amount</string>
+    <string-array name="amount_units">
+        <item>lb</item>
+        <item>oz</item>
+    </string-array>
+
+    <!-- List of fermentables -->
+    <string name="fermentables_hint">Select Fermentable</string>
+    <string-array name="fermentables_list">
+        <item>Select Item</item>
+        <item>Pale 2-Row</item>
+        <item>Munich</item>
+        <item>Abbey Malt</item>
+        <item>Acerola</item>
+    </string-array>
 
 </resources>

@@ -30,9 +30,6 @@ public class BrewActivity extends FragmentActivity {
 
         mPager = findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
-        //mPager.setOffscreenPageLimit(mTabCount);
-        //mTabs.setOnPageChangeListener(pageChangeListener);
-        //mPager.setCurrentItem(mPageSelected);
         mTabs = findViewById(R.id.tabs);
         mTabs.setViewPager(mPager);
     }

@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fermentables_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
+    <ScrollView
+        android:id="@+id/fermentables_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/new_fermentable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/fermentable_objects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_fermentable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fermentable Fragment" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Test Button"/>
+        app:layout_anchor="@id/fermentables_scroll"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_add_black_18dp_2x"
+        android:backgroundTint="@color/colorRed" />
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
